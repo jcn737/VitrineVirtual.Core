@@ -1,0 +1,16 @@
+E:\VS_Projetos\VitrineVirtual.Portal.Core\VitrineVIrtual.Data\obj\Debug\netcoreapp2.1\VitrineVirtual.Data.csproj.CoreCompileInputs.cache
+E:\VS_Projetos\VitrineVirtual.Portal.Core\VitrineVIrtual.Data\obj\Debug\netcoreapp2.1\VitrineVirtual.Data.AssemblyInfoInputs.cache
+E:\VS_Projetos\VitrineVirtual.Portal.Core\VitrineVIrtual.Data\obj\Debug\netcoreapp2.1\VitrineVirtual.Data.AssemblyInfo.cs
+E:\VS_Projetos\VitrineVirtual.Portal.Core\VitrineVIrtual.Data\bin\Debug\netcoreapp2.1\VitrineVirtual.Data.deps.json
+E:\VS_Projetos\VitrineVirtual.Portal.Core\VitrineVIrtual.Data\bin\Debug\netcoreapp2.1\VitrineVirtual.Data.runtimeconfig.json
+E:\VS_Projetos\VitrineVirtual.Portal.Core\VitrineVIrtual.Data\bin\Debug\netcoreapp2.1\VitrineVirtual.Data.runtimeconfig.dev.json
+E:\VS_Projetos\VitrineVirtual.Portal.Core\VitrineVIrtual.Data\bin\Debug\netcoreapp2.1\VitrineVirtual.Data.dll
+E:\VS_Projetos\VitrineVirtual.Portal.Core\VitrineVIrtual.Data\bin\Debug\netcoreapp2.1\VitrineVirtual.Data.pdb
+E:\VS_Projetos\VitrineVirtual.Portal.Core\VitrineVIrtual.Data\bin\Debug\netcoreapp2.1\VitrineVirtual.Model.dll
+E:\VS_Projetos\VitrineVirtual.Portal.Core\VitrineVIrtual.Data\bin\Debug\netcoreapp2.1\VitrineVirtual.Model.pdb
+E:\VS_Projetos\VitrineVirtual.Portal.Core\VitrineVIrtual.Data\obj\Debug\netcoreapp2.1\VitrineVirtual.Data.dll
+E:\VS_Projetos\VitrineVirtual.Portal.Core\VitrineVIrtual.Data\obj\Debug\netcoreapp2.1\VitrineVirtual.Data.pdb
+E:\VS_Projetos\VitrineVirtual.Portal.Core\VitrineVIrtual.Data\obj\Debug\netcoreapp2.1\VitrineVirtual.Data.csproj.AssemblyReference.cache
+E:\VS_Projetos\VitrineVirtual.Portal.Core\VitrineVIrtual.Data\obj\Debug\netcoreapp2.1\VitrineVirtual.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\VS_Projetos\VitrineVirtual.Portal.Core\VitrineVIrtual.Data\obj\Debug\netcoreapp2.1\VitrineV.E45C81FE.Up2Date
+E:\VS_Projetos\VitrineVirtual.Portal.Core\VitrineVIrtual.Data\obj\Debug\netcoreapp2.1\VitrineVirtual.Data.genruntimeconfig.cache

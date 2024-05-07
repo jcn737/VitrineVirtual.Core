@@ -1,0 +1,88 @@
+﻿<nav class="navbar-default navbar-static-side" role="navigation" style="background-color: #3872a2">
+    <div class="sidebar-collapse">
+        <ul class="nav" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element">
+                    <span>
+                        <img alt="image" class="img-circle" src="~/img/thumbnail_VV.png" />
+                    </span>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="clear">
+                            <span class="block m-t-xs">
+                                <strong class="font-bold">Vitrine Virtual</strong>
+                            </span>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                        <li><a href="@Url.Action("Login", "Pages")">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="logo-element">
+                    VV+
+                </div>
+            </li>
+            <li class="@Html.IsSelected(controller: "ModaFeminina")">
+                <a href="@Url.Action("Index", "ModaFeminina")">
+                    <span class="nav-label" data-i18n="nav.graphs" style="color:whitesmoke">Moda Feminina</span>
+                    <span class="fa arrow"></span>
+                </a>
+            </li>
+            <li class="@Html.IsSelected(controller: "ModaMasculina")">
+                <a href="@Url.Action("Index", "ModaPraia")">
+                    <span class="nav-label" data-i18n="nav.graphs" style="color:whitesmoke">Moda Masculina</span>
+                    <span class="fa arrow"></span>
+                </a>
+            </li>
+            <li class="@Html.IsSelected(controller: "ModaBaby")">
+                <a href="@Url.Action("Index", "ModaPraia")">
+                    <span class="nav-label" data-i18n="nav.mailbox" style="color:whitesmoke">Moda Baby </span>
+                    <span class="fa arrow"></span>
+                </a>
+            </li>
+            <li class="@Html.IsSelected(controller: "ModaInfatoJuvenil")">
+                <a href="@Url.Action("Index", "ModaInfatoJuvenil")">
+                    <span class="nav-label" data-i18n="nav.metrics" style="color:whitesmoke">Moda Infato Juvenil</span>
+                </a>
+            </li>
+            <li class="@Html.IsSelected(controller: "ModaPraia")">
+                <a href="@Url.Action("Index", "ModaPraia")">
+                    <span class="nav-label" data-i18n="nav.widgets" style="color:whitesmoke">Moda Praia</span>
+                </a>
+            </li>
+            <li class="@Html.IsSelected(controller: "ModaFitness")">
+                <a href="@Url.Action("Index", "ModaFitness")">
+                    <span class="nav-label" data-i18n="nav.forms" style="color:whitesmoke">Moda Fitness</span>
+                    <span class="fa arrow"></span>
+                </a>
+            </li>
+            <li class="@Html.IsSelected(controller: "ModaIntima")">
+                <a href="@Url.Action("Index", "ModaIntima")">
+                    <span class="nav-label" data-i18n="nav.appviews" style="color:whitesmoke">Moda Intima</span>
+                    <span class="fa arrow"></span>
+                </a>
+
+            </li>
+            <li class="@Html.IsSelected(controller: "SapatosFeminino")">
+                <a href="@Url.Action("Index", "SapatosFeminino")">
+                    <span class="nav-label" data-i18n="nav.otherpages" style="color:whitesmoke">Sapatos Femininos</span>
+                    <span class="fa arrow"></span>
+                </a>
+
+            </li>
+            <li class="@Html.IsSelected(controller: "SapatosMasculino")" style="color:whitesmoke">
+                <a href="@Url.Action("Index", "SapatosMasculino")">
+                    <span class="nav-label" data-i18n="nav.miscellaneous" style="color:whitesmoke">Sapatos Masculinos</span>
+                    <span class="fa arrow"></span>
+                </a>
+
+            </li>
+            <li class="@Html.IsSelected(controller: "SapatoInfatil")">
+                <a href="@Url.Action("Index", "SapatoInfatil")">
+                    <span class="nav-label" data-i18n="nav.uielements" style="color:whitesmoke">Sapato Infatil</span>
+                    <span class="fa arrow"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/metisMenu/3.0.4/metisMenu.js"></script>
+</nav>

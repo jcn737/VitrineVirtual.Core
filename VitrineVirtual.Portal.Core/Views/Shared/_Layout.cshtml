@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vitrine Virtual | @ViewBag.Title</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/metisMenu/3.0.4/metisMenu.css" />
+
+    <!-- Add jQuery Style direct - used for jQGrid plugin -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/animate.css" />
+    <link rel="stylesheet" href="~/lib/style.css" />
+    <link rel="stylesheet" href="~/lib/Site.css" />
+    <link rel="stylesheet" href="~/fonts/font-awesome/css/font-awesome.min.css" />
+
+</head>
+<body>
+    <!-- Skin configuration box -->
+    <!-- Wrapper-->
+    <!-- PageClass give you ability to specify custom style for specific view based on action -->
+    <div id="wrapper" class="@Html.PageClass()">
+        <!-- Navigation -->
+        @Html.PartialAsync("_Navigation")
+        <!-- Page wraper -->
+        <div id="page-wrapper" class="gray-bg @ViewBag.SpecialClass">
+            <!-- Top Navbar -->
+            @Html.PartialAsync("_TopNavbar")
+            <!-- Main view  -->
+            @RenderBody()
+            <!-- Footer -->
+            @Html.PartialAsync("_Footer")
+        </div>
+        <!-- End page wrapper-->
+    </div>
+    <!-- End wrapper-->
+    <!-- Section for main scripts render -->
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/wwwroot/js/pluggins/slimscroll/bootstrap.js"></script>
+    <!-- Handler for local scripts -->
+    @RenderSection("scripts", required: false)
+
+    <script>
+        $('body.canvas-menu .sidebar-collapse').slimScroll({
+            height: '100%',
+            railOpacity: 0.9
+        });</script>
+</body>
+</html>

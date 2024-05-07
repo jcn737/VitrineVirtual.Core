@@ -1,0 +1,58 @@
+﻿<div class="row border-bottom">
+    <div class="container-fluid" style="background-color: #3872a2">
+        <span class="aligncenter">
+            <img class="Image of Seal" src="~/img/vvLogo.png" />
+        </span>
+    </div>
+
+    <nav class="navbar navbar-static-top" role="navigation" style="background-color:#3872a2">
+        <ul class="nav navbar-nav" style="background-color:#3872a2">
+            <li>@Html.ActionLink("Home", "Index", "Home", new { style = "color:whitesmoke" })</li>
+            <li>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:whitesmoke">Logista <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li>@Html.ActionLink("Logista", "Tabs", "CadastroProdutoLoja")</li>
+                    <li class="nav-divider"></li>
+                    <li>@Html.ActionLink("Cadastro Produto", "Index", "CadastroProdutoLoja")</li>
+                    <li class="nav-divider"></li>
+                    <li>@Html.ActionLink("Faturamento", "Index", "FaturamentoLoja")</li>
+                    <li class="nav-divider"></li>
+                    <li>@Html.ActionLink("Relatórios", "Index", "RelatorioLoja")</li>
+                </ul>
+            </li>
+            <li>@Html.ActionLink("Revendedor", "Index", "Revendedor", new { style = "color:whitesmoke" })</li>
+            <li>@Html.ActionLink("Catálogo", "Index", "CatalogoProdutoLoja", new { style = "color:whitesmoke" })</li>
+            <li>@Html.ActionLink("Promocões", "Index", "Promocoes", new { style = "color:whitesmoke" })</li>
+            <li>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:whitesmoke">Gestão Portal <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li>@Html.ActionLink("Usuário", "Index", "Usuario")</li>
+                    <li class="nav-divider"></li>
+                    <li>@Html.ActionLink("Cadastro Lojas", "Index", "CadastroLojas")</li>
+                    <li class="nav-divider"></li>
+                    <li>@Html.ActionLink("Permissões Usuários", "Index", "PermissoesUsuarios")</li>
+                    <li class="nav-divider"></li>
+                    <li>@Html.ActionLink("Faturamento", "Index", "FaturamentoPortal")</li>
+                    <li class="nav-divider"></li>
+                    <li>@Html.ActionLink("Relatórios", "Index", "RelatorioPortal")</li>
+                    <li class="nav-divider"></li>
+                    <li>@Html.ActionLink("Estatisticas PagSeguro", "Index", "EstatisticasPagSeguro")</li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li style="vertical-align:">
+                <a href="@Url.Action("Login", "Pages")" style="color:whitesmoke">
+                    <i class="fa fa-sign-out" style="color:whitesmoke"></i> Sair
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".dropdown-toggle").dropdown();
+    });
+</script>

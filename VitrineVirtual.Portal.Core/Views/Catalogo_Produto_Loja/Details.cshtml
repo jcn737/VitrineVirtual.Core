@@ -1,0 +1,112 @@
+﻿@model VitrineVirtual.Model.Cadastro_Produto_Loja
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/4.0.0/css/jasny-bootstrap.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css" />
+<link rel="stylesheet" href="@Url.Content("~/wwwroot/lib/plugins/slick/slick-theme.css")" />
+<link rel="stylesheet" href="@Url.Content("~/wwwroot/lib/plugins/slick/slick.css")" />
+
+<<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Detalhes do Produto</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="~/Views/Catalogo_Produto_Loja/Index.cshtml">Catálogo</a>
+            </li>
+            <li>
+                <a>Detalhes</a>
+            </li>
+            <li class="active">
+                <strong>Detalhes do Produto</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox product-detail">
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-md-5">
+
+                            <div class="product-images">
+                                <div>
+                                    <div class="image-imitation">
+                                        @Html.DisplayFor(modelItem => Model.Foto_Produto_1)
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="image-imitation">
+                                        [IMAGE 2]
+                                        @*@Html.DisplayFor(modelItem => Model.Foto_Produto_2)*@
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="image-imitation">
+                                        [IMAGE 3]
+                                        @*@Html.DisplayFor(modelItem => Model.Foto_Produto_3)*@
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <h2 class="font-bold m-b-xs">
+                                @Html.DisplayFor(modelItem => Model.Nome_Produto)
+                            </h2>
+                            <small>@Html.DisplayFor(modelItem => Model.Modelo_Produto)</small>
+                            <div class="m-t-md">
+                                <h2 class="product-main-price">@Html.DisplayFor(modelItem => Model.Preco_Produto) <small class="text -muted">Sem frete</small> </h2>
+                            </div>
+                            <hr>
+                            <h4>Descrição do Produto</h4>
+                            <div class="small text-muted">
+                                @Html.DisplayFor(modelItem => Model.Descricao_Produto)
+                            </div>
+                            <dl class="small m-t-md">
+                                <dt>Lista de Descrição</dt>
+                                <dd>A description list is perfect for defining terms.</dd>
+                                <dt>Euismod</dt>
+                                <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                                <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+                                <dt>Malesuada porta</dt>
+                                <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+                            </dl>
+                            <hr>
+                            <div>
+                                <div class="btn-group">
+                                    <button class="btn btn-info btn-sm"><i class="fa fa-cart-plus"></i> Adicionar a Mala</button>
+                                    <button class="btn btn-white btn-sm"><i class="fa fa-star"></i> Add to wishlist </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="ibox-footer">
+                    <span class="pull-right">
+                        Full stock - <i class="fa fa-clock-o"></i> 14.04.2016 10:04 pm
+                    </span>
+                    The generated Lorem Ipsum is therefore always free
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID_Cadastro_Prod_Loja }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="@Url.Content("~/wwwroot/js/pluggins/slick/slick.min.js")" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/4.0.0/js/jasny-bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
